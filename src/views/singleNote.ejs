@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Notes</title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand">LOGIN</a>
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <%for(let i=0; i<nav.length; i++) {%>
+        <li>
+          <a href="<%=nav[i].link%>"><%=nav[i].title%></a>
+        </li>
+        <%}%>
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="/auth/logout" class="navbar-brand">Logout</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>Note Info
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div>
+</div>
+<div class="container">
+  <div class="row">    
+    <div class="col-md-12">       
+      <div class="panel">
+        <div class="panel-body">
+          <div class="row">    
+          <br>
+          <div class="col-md-2 col-sm-3 text-center">
+            <a class="story-title"><img src="http://rememome.com/img/todo_500.jpg" style="width:100px;height:100px" class="img-circle"></a>
+          </div>
+          <div class="col-md-10 col-sm-9">
+            <h3><%=note.title%></h3>
+            <div class="row">
+              <div class="col-xs-9">
+                <h4><span class="label label-default"><%=note.content%></span></h4><h4>
+                <small style="font-family:courier,'new courier';" class="text-muted"><%=note.status%></small>
+                </h4></div>
+              <div class="col-xs-3"></div>
+            </div>
+            <br><br>
+          </div>
+        </div>
+        <hr>     
+          <a href="/notes/delete"  class="btn btn-primary pull-right btnNext">Delete Note</a>
+          &nbsp;
+          <a href="/notes/edit"  class="btn btn-primary pull-left btnNext">Edit Note</a>
+        </div>
+      </div>                                            
+   	</div>
+  </div>
+</div>                                                                
+<hr>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+          <p class="pull-right">Built by Ron Barsimantov</p>      
+      </div>
+    </div>
+  </div>
+</footer>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+	</body>
+</html>

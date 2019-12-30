@@ -1,0 +1,46 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "Todo list management application",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "bootstrap": "3.3.7",
+    "cookie-parser": "1.4.4",
+    "debug": "4.1.1",
+    "ejs": "3.0.1",
+    "express": "4.17.1",
+    "express-session": "1.17.0",
+    "jquery": "3.2.1",
+    "mongodb": "3.4.1",
+    "mongoose": "5.8.3",
+    "morgan": "1.9.1",
+    "nodemon": "2.0.2",
+    "passport": "0.4.1",
+    "passport-local": "1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.19.1"
+  },
+  "scripts": {
+    "start": "set DEBUG=app,app:* & nodemon app.js",
+    "lint": "eslint app.js"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "dev",
+      "PORT": 3000,
+      "DB_URL": "mongodb://localhost:27017",
+      "DB_NAME": "todoApp"
+    }
+  },
+  "author": "Ron Barsimantov",
+  "license": "ISC"
+}
