@@ -19,16 +19,16 @@ To create a fully functional Todo list management application with the following
 
 ### 1.	Display list title
 ### 2.	Display list items
-  a.	Show completion status
-  b.	Edit item name
-  c.	Set item completion status
-  d.	Remove item
+    a.	Show completion status
+    b.	Edit item name
+    c.	Set item completion status
+    d.	Remove item
 ### 3.	Add new item
 ### 4.	Display counters
-  a.	All items
-  b.	Non-completed items
-  c.	Single VS plural label adjustment
+    a.	All items
+    b.	Non-completed items
+    c.	Single VS plural label adjustment
 ### 5. API
-  a.	Implement a rest API with NodeJS and MongoDB
-  b.	Store and retrieve user profile from MongoDB
-  c.	Store and retrieve Todo list state on MongoDB
+    a.	Implement a rest API with NodeJS and MongoDB
+    b.	Store and retrieve user profile from MongoDB
+    c.	Store and retrieve Todo list state on MongoDB
